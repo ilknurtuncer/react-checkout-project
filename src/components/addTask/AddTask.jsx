@@ -3,6 +3,16 @@ import Button from "react-bootsrap/Button"
 import Form from "react-bootstrap/Form"
 
 const AddTask = () => {
+const addNewTask = () => {
+  const url = "https://63f72ba9e8a73b486af1ef5f.mockapi.io/api/tasks";
+  try {
+    await axios.post(url, newTask)
+  } catch (error) {
+    
+  }
+}
+
+
   return (
     <div>
         <Form>
