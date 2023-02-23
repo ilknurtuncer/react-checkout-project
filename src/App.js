@@ -1,5 +1,4 @@
-
-
+import "./components/header"
 
 function App() {
   return (
