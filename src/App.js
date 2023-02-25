@@ -1,12 +1,14 @@
-import "./App.css"
-import "./assets/TaskPng"
+// import Main from "./pages/Main";
+// import data from "./helper/data"
+// import Header from "./components/Header";
 
-function App() {
-  return (
-    <div className="App">
-  
-  
-    </div>
+// function App() {
+//   console.log(data);
+//   return (
+//     <>
+//       <Header/>
+//       <Main data={data}/>
+//     </>
   );
 }
 
