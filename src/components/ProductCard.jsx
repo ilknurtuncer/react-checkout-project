@@ -22,7 +22,7 @@ const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
           </div>
         
           <div className="button border p-2 d-flex justify-content-center w-100">
-            {/* <button className="m-2"
+            <button className="m-2"
               onClick={() => {
                 setCount(count + 1);
               }}
@@ -33,7 +33,7 @@ const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
             <span className="m-2">{count}</span>
             <button className="m-2" onClick={() => setCount(count>1?count-1:count=0)}>
                 <AiOutlineMinus />
-              </button> */}
+              </button>
           </div>
           {/* <div className="remove mt-4">
               <button type="button" className="btn btn-danger w-100">
