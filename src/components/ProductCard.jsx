@@ -41,11 +41,11 @@ const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
                 Remove
               </button>
             </div>
-            {/* <div className="productTotal">
+            <div className="productTotal">
               <p>
                 Product Total:$<span>{price * dampingRate}</span>
               </p>
-            </div> */}
+            </div>
         </div>
     </div>
     );
