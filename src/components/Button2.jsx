@@ -1,7 +1,6 @@
 import React from 'react'
 
-const 
- = () => {
+const Button2 = () => {
   return (
     <div>
     <div className="container text-center">
@@ -11,4 +10,4 @@ const
   )
 }
 
-export default 
+export default  Button2;

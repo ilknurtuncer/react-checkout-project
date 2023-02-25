@@ -6,13 +6,25 @@ import ProductCard from "../components/ProductCard"
 
 
 const Main = ({data}) => {
-  
+  const [button, setButton] = useState(false)
   return (
-    <div>
-        {data.map((item)=>{
-          return (<ProductCard key={item.id} {...item}/>)
-      })}
-     
+    <div className="container-fluid ">
+    <span onClick={(e)=>setButton(!button)}>
+      {button ? null : <Button/>}
+    </span>
+    <div className="d-flex justify-content-center ">
+      {
+        button ? (<AddProduct className="w-50 m-3"/>) : null
+      }
+      <div className="w-50 m-3">
+        <div>
+            {data.map((item)=>{
+              return (<ProductCard key={item.id} {...item}/>)
+            })}
+        </div>
+        <CardTotal />
+      </div>
+      </div>
     </div>
   )
 }
