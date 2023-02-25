@@ -2,15 +2,15 @@ import { useState } from "react";
 import { AiFillDelete, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
-    const [count, setCount] = useState();
+    const [count, setCount] = useState(1);
     return (
      
-        // <div className="container d-flex w-5 border mt-3 shadow">
-        //   <div className="img m-3">
-        //     <img src={image} alt="" style={{ width: "300px" }} />
-        //   </div>
+        <div className="container d-flex w-5 border mt-3 shadow">
+          <div className="img m-3">
+            <img src={image} alt="" style={{ width: "300px" }} />
+          </div>
           <div className="w-3">
-          {/* <div className="items">
+          <div className="items">
             <h5 className="mt-2">{name} </h5>
             <p>
               <span className="text-warning fs-3">
@@ -19,7 +19,7 @@ const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
   
               <span className="text-decoration-line-through fs-3">{price.toFixed(2)}</span>
             </p>
-          </div> */}
+          </div>
         
           <div className="button border p-2 d-flex justify-content-center w-100">
             {/* <button className="m-2"
