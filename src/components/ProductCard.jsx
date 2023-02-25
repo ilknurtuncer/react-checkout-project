@@ -35,13 +35,13 @@ const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
                 <AiOutlineMinus />
               </button>
           </div>
-          {/* <div className="remove mt-4">
+          <div className="remove mt-4">
               <button type="button" className="btn btn-danger w-100">
                 <AiFillDelete />
                 Remove
               </button>
             </div>
-            <div className="productTotal">
+            {/* <div className="productTotal">
               <p>
                 Product Total:$<span>{price * dampingRate}</span>
               </p>
