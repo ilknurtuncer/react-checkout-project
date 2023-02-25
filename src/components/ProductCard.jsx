@@ -2,7 +2,7 @@ import { useState } from "react";
 import { AiFillDelete, AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";
 
 const ProductCard = ({ id, name, image, price, dampingRate, amount }) => {
-    const [count, setCount] = useState(1);
+    const [count, setCount] = useState();
     return (
      
         // <div className="container d-flex w-5 border mt-3 shadow">
